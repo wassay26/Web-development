@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>   
+    <head>
+       <title>My First Web Page</title>
+       <style>
+        table, th, td {
+           border: 2px solid black;
+        }
+        th, td{
+           padding: 20 px;
+        }
+          img {
+             border-radius: 80px;
+             float: left;
+             margin-right: 15px;
+          }
+
+          p {
+             font-weight: bold;
+             font-style: oblique;
+          }
+       </style>
+    </head>
+    <body>
+       <img src="images/meizu c9 pic 770.jpg"> 
+       <p>I am Wassay Karim</p> 
+       <p>I am <U><B><I>Abdul Wassay Karim.</I></B></U> I am studing in NCBA&E. i am living in multan.
+         
+      <h2> Table with Border</h2>
+
+   <table style="width: 100%;">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+         <td>Hamza</td>
+         <td>Ali</td>
+         <td>50</td>
+      </tr>
+      <tr>
+         <td>Bilal</td>
+         <td>Ahmed</td>
+         <td>35</td>
+      </tr>
+   <table>
+
+      <h3>I am Pakistani</h3>
+      <H4>I am Pakistani</H4>
+      <h1>I am Pakistani</h1>
+      <h6>I am Pakistani</h6>
+      <p>I am Pakistani</p>
+
+
+      <form method="" action="">
+         <label>Name:</label>
+         <input type="text" placeholder="Enter your name here..">
+         <br><br>
+
+         <label>Email:</label>
+         <input type="email" placeholder="abc@xyz.com">
+         <br><br>
+
+         <label>Passowrd</label>
+         <input type="password" placeholder="Enter your password here..">
+         <br><br>
+
+         <label>Gender</label>
+         Male:<input type="radio" name="gend" value="male">
+         FeMale:<input type="radio" name="gend" value="female">
+         <br><br>
+
+         <label>Message</label>
+         <textarea cols="30" rows="10"></textarea>
+         <input type="submit">
+      </form>
+
+    </body>
+<html>
