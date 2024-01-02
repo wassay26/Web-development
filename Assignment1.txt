@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assingment #1</title>
+
+        <style type="text/css">
+
+             .nevbar {
+                 background-color: grey;
+                 height: 50px;
+                 text-align: center;
+                 line-height: 50px;
+             }
+             .slider {
+                 height: 200px;
+                 background-color: aqua;
+             }
+             .container {
+                 display: flex;
+                 background-color: blue;
+             }
+             .container .left {
+                 background-color: chocolate;
+                 float: left;
+                 flex: 0.5;
+             }
+             .container .left video{
+                width: 100%;
+             }
+             .container .center {
+                 background-color: darkgreen;
+                 flex: 1;
+                 float: left;
+             }
+             .container .right {
+                 background-color: red;
+                 flex: 0.5;
+                 float: left;
+             }
+             .footer {
+                 background-color: chartreuse;
+                 height: 50px;
+                 text-align: center;
+                 line-height: 50px;
+             }
+             </style>
+
+    </head>
+
+    <body>
+        <div class="nevbar">Nevbar</div>
+        <div class="slider"><b>Slider.</b>
+
+        <a>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</a>
+        
+        <a>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document. 
+        </a></div>
+
+        <div class="container">
+            <div class="left">
+
+            <video controls>
+                <source src="images/videos/meizu c9 pic 135.mp4" type="video/mp4">
+                <source src="images/videos/meizu c9 pic 135.mp4" type="video/mp4">
+
+            </video>
+
+            <video controls>
+                <source src="images/videos/meizu c9 pic 135.mp4" type="video/mp4">
+                <source src="images/videos/meizu c9 pic 135.mp4" type="video/mp4">
+
+            </video>
+
+            <video controls>
+                <source src="images/videos/meizu c9 pic 135.mp4" type="video/mp4">
+                <source src="images/videos/meizu c9 pic 135.mp4" type="video/mp4">
+
+            </video>
+            <a>I am Abdul Wassay Karim. I am living in Multan. I am doing BS-IT from NCBA.</a>
+        </div>
+            <div class="center">
+
+                <audio controls>
+                    <source src="images/Audio/ali-zafar-and-sara-haider-ae-dil-coke-studio-season-8-episode-4.mp3" type="audio/mp3">
+                </audio>
+            </div>
+
+            <div class="right">
+
+                <img width="300" height="300" src="images/download.jpg">
+                </div>
+
+        </div>
+        <div class="footer">Footer</div>
+
+        
+    </body>
+</html>
