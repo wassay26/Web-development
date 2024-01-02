@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="Style.css">
+
+        <style>
+            body {
+                background-color: chartreuse;
+            }
+            a:link{
+                color: black;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color: blue;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:hover {
+                color: red;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            a:active {
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>    
+    </head>
+    <body>
+        <h1>My Website</h1>
+        <p>I am Abdul Wassay karim. This is my website. I am living in Multan, Punjab. I love to build websites. I am doing BS-IT from NCBA.</p>
+
+        <a href="https://www.google.com/" target="_blank">Click Me to go google</a>
+
+        <a href="https://www.google.com/" target="_blank">google</a>
+
+        <h2 class="work">I am Pakistani</h2>
+        <h2 style="color: black;">I am Pakistani</h2>
+
+    </body>
+</html> 
