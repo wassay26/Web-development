@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Nobody Fool</title>
+         <style type="text/css">
+        
+        .topbar {
+           background-color: #2E2E2E;
+           height: 60px;
+        }
+        .topbar .left {
+           width: 78%;
+           height: 60px;
+           background-color: #2E2E2E;
+           float: left;
+           margin-left: 23px;
+        }
+        .topbar .left a {
+           padding-left: 7px;
+           padding-right: 7px;
+           border-right: 2px solid #9F9F9F;
+           color: #9F9F9F;
+           text-decoration: none;
+           line-height: 60px;
+        }
+        .topbar .left a.br {
+            border-right: none;
+        }
+        .cr {
+            padding-left: 20px;
+        }
+        .topbar .right {
+            width: 17%;
+            height: 60px;
+            background-color: #2E2E2E;
+            float: right;
+        }
+        .topbar .right img{
+            padding-top: 14px;
+            padding-left: 14px;
+        }
+        .nevbar {
+            height: 75px;
+            background-color: #FFFFFF;
+            border-bottom: 5px solid #F1F1F1;
+            margin-left: 23px;
+            margin-right: 35px;
+            padding-bottom: 30px;
+        }
+        .nevbar a {
+            text-decoration: none;
+            text-transform: uppercase;
+            padding-bottom: 23px;
+            color: #2E2E2E;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 148px;
+        }
+        .nevbar a.active {
+            color: #0099FF;
+            border-bottom: 5px solid #9F9F9F;
+            padding-bottom: 31px;
+            padding-left: 5px;
+        }
+        .nevbar a:hover {
+            color: #9F9F9F;
+            border-bottom: 5px solid #0099FF;
+        }          
+        .titlebar {
+            height: 148px;
+            background-color: #FFFFFF;
+            border-bottom: 5px solid #E9E9E9;
+            padding-bottom: 22px;
+        }
+        .titlebar .left {
+            height: 148px;
+            width: 60%;
+            float: left;
+            padding-top: 34px;
+        }
+        .titlebar .left a {
+            font-size: 50px;
+            padding-left: 30px;
+        }
+        .titlebar .right {
+            height: 120px;
+            width: 40%;
+            float: right;
+            margin-top:70px;
+        }
+        .btn {
+            background-color:#0099FF;
+            padding:10px;
+            border-radius:10px;
+            color:#FFFFFF;
+            border: none;
+        }
+        .da {
+            background-color: #F1F1F1;
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 350px;
+            border: none;
+            padding-left: 10px;
+        }
+        .slider {
+            height: 460px;
+            background-color: #F1F1F1;
+            border-bottom: 5px solid #E9E9E9;
+            padding-left: 30px;
+        }
+        .slider .left {
+            height: 308px;
+            width: 23%;
+            float: left;
+            padding-top: 150px;
+        }
+        .slider .right {
+            height: 460px;
+            width: 37%;
+            float: right;
+        }
+        .slider .left a {
+            font-size: 40px;
+        }
+        .slider .left button {
+            color: #FFFFFF;
+            background-color: #0099FF;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .mainbar {
+            height: 506px;
+            background-color: #FFFFFF;
+        }
+        .mainbar .left {
+            height: 240px;
+            width: 50%;
+            float: left;
+        }
+        .mainbar .left img {
+            padding-top: 50px;
+            padding-left: 30px;
+        }
+        .mainbar .right {
+            height: 179px;
+            width: 37%;
+            float: right;
+            margin-right: 20px;
+        }
+        .mainbar .right a {
+            padding-top: 20px;
+            margin-right: 30px;
+            text-align: center;
+        }
+        .mainbar .right .inner-right .left {
+            padding-bottom: 20px;
+            margin-bottom: -52px;
+        }
+        .mainbar .right .inner-right .right {
+            margin-top: 40px;
+        }
+        .cd {
+            color: #0099FF;
+            background-color: #0099FF;
+        }
+        .contactbar {
+            height: 160px;
+            background-color: #E0E0E0;      
+            border-bottom: 40px solid #FFFFFF;
+            border-left: 30px solid #FFFFFF;
+            border-right: 30px solid #FFFFFF;
+        }
+        .contactbar .left {
+            width: 60%;
+            float: left;
+            border-left: 10px solid #0099FF;
+            padding-top: 40px;
+        }
+        .contactbar .left a {
+            font-size: 50px;
+            padding-left: 35px;
+        }
+        .contactbar .left h4 {
+            padding-left: 35px;
+            font-size: 23px;
+            margin-top: 0px;
+            color: #999999;
+        }
+        .contactbar .right {
+            width: 29%;
+            float: right;
+            padding-top: 48px;
+        }
+        .contactbar .right button {
+            font-size: 30px;
+            color: #E0E0E0;
+            background-color: #0099FF;
+            border: none;
+            border-radius: 10px;
+            padding-top: 21px;
+            padding-bottom: 18px;
+        }
+        .infobar {
+            height: 390px;
+            background-color: #1A1A1A;
+            border-top: 5px solid #000000;
+            padding-left: 30px;
+            padding-top: 60px;
+        }
+        .infobar .left {
+            height: 390px;
+            width: 25%;
+            float: left;
+        }
+        .infobar .center .left {
+            height: 390px;
+            width: 25%;
+            float: left;
+        } 
+        .infobar .center .left ul {
+            color: #0099FF;
+            padding-left: 13px;
+        }      
+        .infobar .center .right {
+            height: 390px;
+            width: 25%;
+            float: right;
+        }
+        .infobar .right {
+            height: 390px;
+            width: 25%;
+            float: right;
+        }
+        .footer {
+            height: 60px;
+            background-color: #222222;
+            padding-left: 30px;
+            border-top: 2ps solid #2D2D2D;
+            margin-top: 390px;
+            margin-left: -30px;
+            padding-top: 20px;
+        }
+
+        </style>
+ 
+        <body style="margin:0px;padding:0px;">
+           <div class="topbar">
+               <div class="left">
+               <a href="" class="cr">Sign Up</a>
+               <a href="">Login</a>
+               <a href="">RSS Feeds</a>
+               <a href="" class="br">Archived News</a>
+           </div> 
+           
+           <div class="right">
+               <img src="images/sliced images/images/nobodysfool_03.gif">
+               <img src="images/sliced images/images/nobodysfool-pic2_03.gif">
+               <img src="images/sliced images/images/nobodysfool-pic2_05.gif">
+               <img src="images/sliced images/images/nobodysfool-pic2_07.gif">
+               <img src="images/sliced images/images/nobodysfool-pic2_09.gif">
+            </div>
+            </div>
+
+            <div class="nevbar">
+                <a href="">homepage</a>
+                <a href="">style demo</a>
+                <a href="">full width</a>
+                <a href="">dropdown</a>
+                <a href="">gallery</a>
+                <a href="">portfolio</a>
+                <a href="">link text</a>
+                <a href="">long link text</a>
+            </div>
+
+            <div class="titlebar">
+                <div class="left">
+                   <a>NobodysFool</a>
+                   <br>
+               <div style="padding-left:30px;">Free PSD Website Template</div>
+                </div>
+
+                <div class="right">
+                    <form method="" action="">
+                        <input type="text" placeholder="Search Our Website..." class="da">
+                        <input type="submit" class="btn">
+                        <br><br>
+                    </form>
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="left">
+                    <a>Your title can be long and descriptive</a>
+                    <br>
+                    <button type="readmores">READ MORE >></button>
+                </div>
+                <din class="right">
+                    <img src="images/sliced images/images/slider-pic_03.gif">
+                </din>
+            </div>
+            <div class="mainbar">
+                <div class="left">
+                    <img src="images/sliced images/images/mainbar-pic_03.gif">
+                </div>
+                <div class="right">
+                    <div class="inner-right">
+                        <div class="left">
+                            <img src="images/sliced images/images/mainbar-pic.2_03.gif">
+                            <br>
+                            <div style="color: #0099FF;">Vivamuslibero Augue</div>
+                            <br>
+                            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</a> 
+                        </div>
+                        <div class="right">
+                            <img src="images/sliced images/images/mainbar-pic.2_03.gif">
+                            <br>
+                            <div style="color: #0099FF;">Vivamuslibero Augue</div>
+                            <br>
+                            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</a>
+                        </div>
+                    </div>
+
+                    <div class="inner-right">
+                        <div class="left">
+                            <img src="images/sliced images/images/mainbar-pic.2_03.gif">
+                            <br>
+                            <div style="color: #0099FF;">Vivamuslibero Augue</div>
+                            <br>
+                            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</a>
+                        </div>
+                        <div class="right">
+                            <img src="images/sliced images/images/mainbar-pic.2_03.gif">
+                            <br>
+                            <div style="color: #0099FF;">Vivamuslibero Augue</div>
+                            <br>
+                            <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contactbar">
+                <div class="left">
+                    <a>Lorem ipsum dolor sit amet elit !</a>
+                    <br>
+                    <h4>Why not try our services today, you won't regret your choice !</h4>
+                </div>
+                <div class="right">
+                    <button type="contact">CONTACT US TODAY</button>
+                </div>
+            </div>
+
+            <div class="infobar">
+                <div class="left">
+                    <div style="color: #FFFFFF;">ABOUT US</div>
+                    <br>
+                    <img src="images/sliced images/images/infoar-pic.1_03.gif">
+                    <br>
+                    <a href="">Read More ></a>
+                </div>
+                <div class="center">
+                    <div class="left">
+                        <div style="color: #FFFFFF;">QUICK LINKS</div>
+                        <ul>
+                            <li href="">Lorem ipsum dolor sit</li>
+                            <li href="">Amet consectetur</li>
+                            <li href="">Praesen vel sem id</li>
+                            <li href="">Curabitur hendreit est</li>
+                            <li href="">ALiquam eget erat nec sapien</li>
+                            <li href="">Cras id augue nunc</li>
+                            <li href="">In ne justo non</li>
+                            <li href="">Vivamus mollis enim ut</li>
+                            <li href="">Curabitur hendreit est</li>
+                            <li href="">Sed a nulla urna</li>
+                        </ul>
+                    </div>
+                
+                <div class="right">
+                    <div style="color: #FFFFFF;">LATEST BLOG POST</div>
+                    <br>
+                    <img src="images/sliced images/images/infobar-pic.2_03.gif">
+                </div>
+                
+                <div class="center">
+                    <div class="right">
+                        <div style="color: #FFFFFF;">CONTACT US</div>
+                        <br>
+                        <form method="" action="">
+                            <label></label>
+                            <input type="text" placeholder="Name">
+                            <br><br>
+                            
+                            <label></label>
+                            <input type="email" placeholder="Email">
+                            <br><br>
+
+                            <label></label>
+                            <input type="text" placeholder="Subject">
+                            <br><br>
+
+                            <label></label>
+                            <textarea cols="21" rows="6" placeholder="Message"></textarea>
+                            <br><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a>Copyrght @ 2013 Domain Name - All Rights Reserved</a>
+            </div>
+
+        </body>
+
+    </head>
+</html>
