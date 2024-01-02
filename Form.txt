@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Form</title>
+    </head>
+    <body>
+        <form method="" action="">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name here">
+            <br><br>
+
+            <label>Email:</label>
+            <input type="email" placeholder="abc@xyz.com">
+            <br><br>
+
+            <label>Pasword:</label>
+            <input type="password" placeholder="Enter your password here">
+            <br><br>
+
+            <label>Gender:</label>
+            Male:<input type="radio" name="gend" value="male">
+            FeMale:<input type="radio" name="gend" value="female">
+            <br><br>
+
+            <label>Phone no:</label>
+            <input type="number" placeholder="030X-XXXXXXX">
+            <br><br>
+
+            <label>Roll no:</label>
+            <input type="number" placeholder="Enter your Roll no here">
+            <br><br>
+
+            <label>Message:</label>
+            <textarea cols="20" rows="5"></textarea>
+            <input type="submit">
+            <br><br>
+
+
+            <label>Date</label>
+            <input type="date" placeholder="Enter date here">
+            <br><br>
+
+            <label>Time:</label>
+            <input type="time">
+            <br><br>
+
+            <label>Volume:</label>
+            <input type="range">
+
+
+
+        </form>
+    </body>
+</html>
